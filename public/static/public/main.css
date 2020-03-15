@@ -4,36 +4,38 @@ body {
 }
 
 .content {
-    margin-left: 200px;
+    margin-left: 100px;
 }
 
 p, ol {
-    opacity: 60%;
+    opacity: 0.6;
 }
 
-a:visited {
-    color: darkblue;
+a, a:visited {
+    color: cornflowerblue;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+.top-navigation {
     background-color: blanchedalmond;
+    overflow: hidden;
 }
 
-nav li {
-    float: right;
+.top-navigation a:hover {
+    background-color: lightgray;
 }
 
-nav li a {
-    display: block;
+.top-navigation a {
+    float: left;
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    color: darkblue;
+    font-size: 17px;
   }
 
-  nav li a:hover {
-      background-color: gray;
-  }
+.left-navigation {
+    float: left;
+}
+
+.right-navigation {
+    float: right;
+}
