@@ -1,0 +1,39 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: cornsilk;
+}
+
+.content {
+    margin-left: 200px;
+}
+
+p, ol {
+    opacity: 60%;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blanchedalmond;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: darkblue;
+  }
+
+  nav li a:hover {
+      background-color: gray;
+  }
