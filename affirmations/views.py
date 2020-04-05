@@ -14,7 +14,7 @@ class UserAffirmationtListView(ListView):
     context_object_name = 'affirmations'
 
     def get_queryset(self):
-        user = get_object_or_404(User, username=self.kwargs.get('username'))
+        user = get_object_or_404(User, username=self.request.user.username)
         return Affirmation.objects.filter(author=user).order_by('-date_posted')
 
 class AffirmationCreateView(LoginRequiredMixin, CreateView):
