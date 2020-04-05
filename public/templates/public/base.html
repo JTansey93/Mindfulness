@@ -19,7 +19,7 @@
                  Otherwise they'll see the 'login' and 'register' routes -->
             <div class="right-navigation">
                 {% if user.is_authenticated %}
-                    <a href="#">Profile</a>
+                    <a href="{% url 'profile' %}">Profile</a>
                     <a href="{% url 'logout' %}">Logout</a>
                 {% else %}
                     <a href="{% url 'login' %}">Login</a>

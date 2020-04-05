@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'public.apps.PublicConfig',
     'users.apps.UsersConfig',
+    'affirmations.apps.AffirmationsConfig',
+    'meditationtime.apps.MeditationtimeConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

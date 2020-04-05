@@ -1,0 +1,8 @@
+{% extends 'public/base.html' %}
+{% block content %}
+    {% for affirmation in affirmations %}
+        <div class="affirmation">
+            {{ affirmation.content }}
+        </div>
+    {% endfor %}
+{% endblock content %}
