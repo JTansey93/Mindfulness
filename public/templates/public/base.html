@@ -1,4 +1,5 @@
 {% load static %}
+<!-- The base template provides the basic elements that will be reproduced across the entire site -->
 <!DOCTYPE html>
 <html lang="en-gn">
     <head>
@@ -14,13 +15,15 @@
                 <a href="{% url 'about' %}">About</a>
                 </ul>
             </div>
+            <!-- If the user is logged in they'll see 'profile' and 'logout' routes
+                 Otherwise they'll see the 'login' and 'register' routes -->
             <div class="right-navigation">
                 {% if user.is_authenticated %}
                     <a href="#">Profile</a>
                     <a href="{% url 'logout' %}">Logout</a>
                 {% else %}
                     <a href="{% url 'login' %}">Login</a>
-                    <a href="#">Register</a>
+                    <a href="{% url 'register' %}">Register</a>
                 {% endif %}
             </div>
         </div>
